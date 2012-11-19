@@ -271,12 +271,14 @@ module Main
    end
    
    def config
+=begin
       unless have_header("f2c.h") and
             have_library("blas") and
             have_library("lapack")
          puts "A full LAPACK installation was not found."
          exit(-1)
       end
+=end
 
       $distcleanfiles = [
          "rb_lapack_s.c",
