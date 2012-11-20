@@ -17,6 +17,7 @@ unless have_header("f2c.h") and
 end
 
 $CFLAGS += " -I./include"
+$LDFLAGS += " -fPIC"
 RbConfig::MAKEFILE_CONFIG['CC'] = ENV['CC'] if ENV['CC']
 
 module Enumerable

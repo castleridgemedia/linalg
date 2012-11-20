@@ -29,7 +29,7 @@ $CFLAGS += " -Wall" if CONFIG["CC"] == "gcc"
 $CFLAGS += " -I../lapack/include"
 
 # why doesn't $INCFLAGS work
-$LDFLAGS += " -lf2c -lm -llapack"
+$LDFLAGS += " -fPIC"
 RbConfig::MAKEFILE_CONFIG['CC'] = ENV['CC'] if ENV['CC']
 ####################################################
 #
