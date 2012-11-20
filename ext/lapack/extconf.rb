@@ -7,7 +7,7 @@
 require 'mkmf'
 require 'enumerator'
 
-$LDFLAGS += " -static -lf2c"
+$LDFLAGS += " -lf2c"
 
 module Enumerable
    def map_with_index 

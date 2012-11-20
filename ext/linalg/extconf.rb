@@ -29,8 +29,7 @@ end
 $CFLAGS += " -Wall" if CONFIG["CC"] == "gcc"
 
 # why doesn't $INCFLAGS work
-$CFLAGS += " -I../lapack/include"
-$LDFLAGS += " -static -lf2c -lm -llapack"
+$LDFLAGS += " -lf2c -lm -llapack"
 
 ####################################################
 #
