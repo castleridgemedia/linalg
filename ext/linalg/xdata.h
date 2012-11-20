@@ -12,7 +12,6 @@
 
 #include <f2c.h>
 
-#include "../lapack/rb_lapack.h"
 #include "linalg.h"
 #include "dcomplex.h"
 #include "scomplex.h"
