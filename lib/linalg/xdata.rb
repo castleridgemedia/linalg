@@ -106,6 +106,10 @@ module Linalg
       end
 
       class Char < CharData
+         def to_char_ptr
+           to_doublereal_ptr
+         end
+
          def initialize(value = "\0")
             super(1)
             self[0] = value
