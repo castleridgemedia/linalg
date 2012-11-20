@@ -10,13 +10,13 @@ require 'fileutils'
 
 unless have_header("f2c.h") and
       have_library("blas") and
-      have_library("lapack")
+      have_library("lapack") and 
+      have_library("f2c")
    puts "A full LAPACK installation was not found."
    exit(-1)
 end
 
 $CFLAGS += " -I./include"
-$LDFLAGS += " -lf2c -lm -llapack"
 RbConfig::MAKEFILE_CONFIG['CC'] = ENV['CC'] if ENV['CC']
 
 module Enumerable
