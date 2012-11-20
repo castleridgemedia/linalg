@@ -29,5 +29,7 @@ void Init_chardata(void) ;
 
 extern VALUE rb_cXData ;
 
+typedef int intreal;
+
 #endif
 
