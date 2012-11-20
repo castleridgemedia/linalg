@@ -129,25 +129,6 @@ VALUE rb_ddata_to_doublereal_ptr( VALUE self )
 }
 
 /*
- * This is the char
- */
-
-VALUE rb_ddata_to_char_ptr( VALUE self )
-{
-    DData * a;
-    get_ddata(a, self);
-    return ULONG2NUM((char)a->data);
-
-}
-
-VALUE rb_ddata_to_integer_ptr( VALUE self )
-{
-    DData * a;
-    get_ddata(a, self);
-    return ULONG2NUM((int)a->data);
-}
-
-/*
  * Fill the array with this value.
  *
  */
