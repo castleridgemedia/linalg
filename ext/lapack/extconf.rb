@@ -7,7 +7,7 @@
 require 'mkmf'
 require 'enumerator'
 
-$LDFLAGS += " -lf2c"
+$LDFLAGS += " -lf2c -lm"
 RbConfig::MAKEFILE_CONFIG['CC'] = ENV['CC'] if ENV['CC']
 
 module Enumerable
