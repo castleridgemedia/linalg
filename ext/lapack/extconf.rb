@@ -7,6 +7,8 @@
 require 'mkmf'
 require 'enumerator'
 
+$LDFLAGS += " -lf2c"
+
 module Enumerable
    def map_with_index 
       arr = []
