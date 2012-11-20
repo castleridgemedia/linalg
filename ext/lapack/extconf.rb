@@ -8,6 +8,7 @@ require 'mkmf'
 require 'enumerator'
 
 $LDFLAGS += " -lf2c"
+RbConfig::MAKEFILE_CONFIG['CC'] = ENV['CC'] if ENV['CC']
 
 module Enumerable
    def map_with_index 

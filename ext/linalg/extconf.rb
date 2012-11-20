@@ -31,7 +31,7 @@ $CFLAGS += " -I../lapack/include"
 
 # why doesn't $INCFLAGS work
 $LDFLAGS += " -lf2c -lm -llapack"
-
+RbConfig::MAKEFILE_CONFIG['CC'] = ENV['CC'] if ENV['CC']
 ####################################################
 #
 # Instantiator
